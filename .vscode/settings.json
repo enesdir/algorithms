@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    ".babelrc": "jsonc",
+    ".eslintrc": "jsonc",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    ".tslintrc": "json",
+    "*.geojson": "json",
+    ".sequelizerc": "javascript",
+    "*.pyi": "python",
+    "*.bats": "shellscript",
+    "dockerfile.*": "dockerfile",
+    "*.tsx": "typescriptreact",
+    "*.env.*": "dotenv",
+    "stdio.h": "c"
+  }
+}
