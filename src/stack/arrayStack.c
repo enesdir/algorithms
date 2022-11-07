@@ -1,7 +1,7 @@
 // Stack - Array based implementation.
-// Creating a stack of integers.
 #include <stdio.h>
 
+// Creating a stack of integers.
 #define MAX_SIZE 101
 
 int A[MAX_SIZE]; // integer array to store the stack
