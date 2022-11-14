@@ -12,6 +12,9 @@
     "dockerfile.*": "dockerfile",
     "*.tsx": "typescriptreact",
     "*.env.*": "dotenv",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "__locale": "c",
+    "cctype": "c",
+    "locale": "c"
   }
 }

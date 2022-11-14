@@ -7,6 +7,8 @@ Implementation of Stack:
 - using array
 - using linked list
 
+Infix , Prefix and Postfix notations explained on this chapter: [`EXPRESSIONS`](<https://github.com/codenuru/algorithms/tree/master/src/stack/EXPRESSIONS.md>)
+
 ## Advantages
 
 ### Advantages of array implementation
