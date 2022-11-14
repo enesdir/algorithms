@@ -11,6 +11,9 @@
       "detail",
       "img",
       "table",
+      "thead",
+      "th",
+      "tbody",
       "tr",
       "td"
     ]
