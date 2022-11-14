@@ -1,8 +1,6 @@
-import { Stack, isPalindrome } from "./stack"
+import { Stack } from "./stack"
 
 test("basic", () => {
-  expect(isPalindrome("racecar")).toEqual("racecar is a palindrome.")
-  expect(isPalindrome("codenuru")).toEqual("codenuru is not a palindrome.")
   var tempList = new Stack<number>()
   expect(tempList.push(1)).toBe(true)
   expect(tempList.push(2)).toBe(true)
@@ -14,4 +12,8 @@ test("basic", () => {
   expect(tempList.peek()).toBe(4)
   expect(tempList.pop()).toBe(4)
   expect(tempList.peek()).toStrictEqual(1)
+  var stringList = new Stack<string>()
+  expect(stringList.reverseString("reverseString")).toEqual("gnirtSesrever")
+  expect(stringList.peek()).toEqual("g")
+  expect(stringList.size()).toBe(13)
 })

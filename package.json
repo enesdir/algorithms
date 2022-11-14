@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "yarn install && yarn test:live",
-    "test": "jest --colors --coverage test",
+    "test": "jest --colors --coverage --verbose test",
     "test:live": "jest --watchAll"
   },
   "repository": {

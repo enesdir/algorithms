@@ -23,7 +23,7 @@ void push(struct node **top, char letter)
   *top = temp;
 }
 
-void reverse_string(struct node **top, char *word)
+void reverseString(struct node **top, char *word)
 {
   int i = 0;
 
@@ -53,7 +53,7 @@ int main()
   struct node *top = NULL;
   char *word = "1racecar2";
 
-  reverse_string(&top, word);
+  reverseString(&top, word);
   print(top);
 }
 /*
