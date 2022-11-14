@@ -1,6 +1,6 @@
 import { DoublyLinkedList } from "./doublyLinkedList"
 
-test("basic", () => {
+test("Doubly Linked List", () => {
   var tempList = new DoublyLinkedList<number>()
   expect(tempList.addStart(1)).toBe(true)
   expect(tempList.addStart(0)).toBe(true)

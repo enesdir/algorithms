@@ -59,7 +59,7 @@ const Stack = function <T>(this: IStack<T>) {
     }
   }
   /**
-   * chech if the stack is empty or not
+   * check if the stack is empty or not
    * @returns boolean
    */
   this.isEmpty = function () {
@@ -73,7 +73,7 @@ const Stack = function <T>(this: IStack<T>) {
     return this.count
   }
   /**
-   * throw an execpt if pop() or peek() called for an empty stack.
+   * throw an except if pop() or peek() called for an empty stack.
    */
   this.exceptEmpty = function () {
     if (this.isEmpty()) {

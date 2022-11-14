@@ -3,9 +3,22 @@ export interface DoublyLinkedListNode<T> {
   next: DoublyLinkedListNode<T> | null
   prev: DoublyLinkedListNode<T> | null
 }
+interface IDoublyLinkedList<T> {
+  size: () => number
+  head: () => DoublyLinkedListNode<T> | null
+  isEmpty: () => boolean
+  addStart: (x: T) => boolean
+  addAtTail: (x: T) => boolean
+  addAtPosition: (y: number, x: T) => number | boolean
+  addAtEnd: (x: T) => boolean
+  removeAtStart: (x: T) => boolean
+  removeAtPosition: (x: number) => boolean
+  removeAtEnd: () => boolean | T
+  print: () => T[]
+}
 
-export function DoublyLinkedList<T>() {
-  let length = 0
+export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
+  let length: number = 0
   let head: DoublyLinkedListNode<T> | null = null
 
   // https://github.com/Microsoft/TypeScript/wiki/'this'-in-TypeScript#specify-type-of-this-in-function-signature
