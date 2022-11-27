@@ -1,3 +1,13 @@
+/*
+Javascript program to implement a stack
+using singly linked list
+*/
+
+// Node this interface
+interface INode<T> {
+  data: T
+  next: INode<T> | null
+}
 // Stack This interface
 interface IStack<T> {
   count: number
@@ -12,14 +22,18 @@ interface IStack<T> {
   peek: () => T
 }
 
+// Create Stack Using Linked List
 const Stack = function <T>(this: IStack<T>) {
   this.storage = {}
   this.count = 0
   this.top = {}
-  const Node = function (element: T) {
-    this.data = element
+
+  // A linked list node
+  const Node = function (this: INode<T>, data: T) {
+    this.data = data
     this.next = null
   }
+
   /**
    * method for adding an element to the stack.
    * @param {any} value value of the node the want to enter
@@ -30,6 +44,7 @@ const Stack = function <T>(this: IStack<T>) {
     this.count++
     return true
   }
+
   /**
    * method for removing element elements from the stack.
    * @returns the last element entered the stack.
@@ -46,6 +61,7 @@ const Stack = function <T>(this: IStack<T>) {
       console.log(error)
     }
   }
+
   /**
    * method show the element would be removed next but does not actually remove it.
    * @returns the last element entered the stack.
@@ -58,6 +74,7 @@ const Stack = function <T>(this: IStack<T>) {
       console.log(error)
     }
   }
+
   /**
    * check if the stack is empty or not
    * @returns boolean
@@ -65,6 +82,7 @@ const Stack = function <T>(this: IStack<T>) {
   this.isEmpty = function () {
     return this.count === 0
   }
+
   /**
    * method show the stack size
    * @returns the stack size
@@ -72,6 +90,7 @@ const Stack = function <T>(this: IStack<T>) {
   this.size = () => {
     return this.count
   }
+
   /**
    * throw an except if pop() or peek() called for an empty stack.
    */
@@ -84,6 +103,9 @@ const Stack = function <T>(this: IStack<T>) {
 
 export { Stack }
 // const tempList = new Stack<string>()
+// console.log(tempList.exceptEmpty())
 // console.log(tempList.push("Hello"))
+// console.log(tempList.push("world"))
 // console.log(tempList.isEmpty())
+// console.log(tempList.pop())
 // console.log(tempList.peek().data)

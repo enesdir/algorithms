@@ -15,6 +15,12 @@ describe("Singly Linked List", () => {
   it("should successfully return list length for linked list", () => {
     expect(tempList.size()).toBe(5)
   })
+  it("should check list is non empty return false.", () => {
+    // act
+    let expression = tempList.isEmpty()
+    // assert
+    expect(expression).toBe(false)
+  })
   it("should successfully return remove item for deleted using by index number", () => {
     expect(tempList.removeAt(3)).toBe("Cat")
   })

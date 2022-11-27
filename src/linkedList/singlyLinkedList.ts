@@ -1,5 +1,6 @@
 /* LinkedList */
 
+// Node this interface
 interface INode<T> {
   data: T
   next: INode<T> | null

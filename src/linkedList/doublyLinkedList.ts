@@ -28,7 +28,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
     this.prev = null
   }
 
-  function isEmpty(): boolean {
+  this.isEmpty = function (): boolean {
     return head === null
   }
 
@@ -42,7 +42,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
 
   this.addStart = function (element: T) {
     var newNode = new Node(element)
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       head = newNode
     } else {
       head.prev = newNode
@@ -56,7 +56,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
   this.addAtTail = function (element: T): boolean {
     var newNode = new Node(element)
 
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       head = newNode
     } else {
       let tempNode = head
@@ -99,7 +99,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
   this.addAtEnd = function (element: T) {
     let newNode = new Node(element)
 
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       head = newNode
     } else {
       const getLast = (node) => {
@@ -114,7 +114,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
   }
   this.removeAtStart = function () {
     let tempNode = head
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       return false
     }
     if (tempNode.next === null) {
@@ -156,7 +156,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
 
   this.removeAtEnd = function () {
     let tempNode = head
-    if (isEmpty()) {
+    if (this.isEmpty()) {
       return false
     }
     if (tempNode.next == null) {
@@ -174,7 +174,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
   }
   this.print = function () {
     let temp: T[] = []
-    while (!isEmpty()) {
+    while (!this.isEmpty()) {
       temp.push(head.data)
       head = head.next
     }
@@ -184,6 +184,7 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
 // var tempList = new DoublyLinkedList<number>()
 // console.log(tempList.addStart(1))
 // console.log(tempList.addStart(0))
+// console.log(tempList.head().next.data)
 // console.log(tempList.addAtTail(5))
 // console.log(tempList.removeAtEnd())
 // console.log(tempList.addAtEnd(9))
