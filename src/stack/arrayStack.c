@@ -71,7 +71,7 @@ int main()
   Print();
 }
 /*
-src/stack> gcc ./arrayStacks.c
+src/stack> gcc ./arrayStack.c
 src/stack> a.out
 
 Stack: 2

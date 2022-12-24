@@ -1,0 +1,130 @@
+// Circular Array Implementation of Queue
+
+#include <stdio.h>
+#define MAX_SIZE 10
+
+int A[MAX_SIZE];
+int front = -1;
+int rear = -1;
+
+// To check wheter Queue is empty or not
+int IsEmpty()
+{
+  if (front == -1 && rear == -1)
+    return 1;
+  return 0;
+}
+
+int Front()
+{
+  if (front == -1)
+  {
+    printf("Queue is empty !\n");
+    return -1;
+  }
+  return A[front];
+}
+
+void Enqueue(int element)
+{
+  if ((rear + 1) % MAX_SIZE == front)
+  {
+    printf("Queue is full ! Insertion cannot be performed\n");
+    return;
+  }
+  else if (IsEmpty())
+  {
+    front = rear = 0;
+  }
+  else
+  {
+    rear = (rear + 1) % MAX_SIZE;
+  }
+  A[rear] = element;
+  printf("Element successfully inserted into the Queue\n");
+}
+
+void Dequeue()
+{
+  if (IsEmpty())
+  {
+    printf("Queue is empty ! Deletion cannot be performed\n");
+    return;
+  }
+  else if (front == rear)
+  {
+    front = rear = -1;
+    printf("Element successfully deleted from the Queue\n");
+    return;
+  }
+  else
+  {
+    front = (front + 1) % MAX_SIZE;
+    printf("Element successfully deleted from the Queue\n");
+    return;
+  }
+}
+
+void Print()
+{
+  if (IsEmpty())
+  {
+    printf("Queue is empty !\n");
+    return;
+  }
+  printf("Queue is : ");
+  int i, count = (rear + MAX_SIZE - front) % MAX_SIZE + 1;
+  for (i = 0; i < count; i++)
+  {
+    int index = (front + i) % MAX_SIZE;
+    printf("%d ", A[index]);
+  }
+  printf("\n");
+}
+
+int main()
+{
+  Dequeue();
+  Print();
+  Enqueue(15);
+  Print();
+  Enqueue(23);
+  Print();
+  Enqueue(31);
+  Print();
+  Enqueue(47);
+  Print();
+  Dequeue();
+  Print();
+  Dequeue();
+  Print();
+  Enqueue(53);
+  Print();
+
+  int front_element = Front();
+  printf("Front element = %d\n", front_element);
+
+  return 0;
+}
+/*
+src/queue> gcc ./arrayQueue.c
+src/queue> a.out
+
+Queue is empty ! Deletion cannot be performed
+Queue is empty !
+Element successfully inserted into the Queue
+Queue is : 15
+Element successfully inserted into the Queue
+Queue is : 15 23
+Element successfully inserted into the Queue
+Queue is : 15 23 31
+Element successfully inserted into the Queue
+Queue is : 15 23 31 47
+Element successfully deleted from the Queue
+Queue is : 23 31 47
+Element successfully deleted from the Queue
+Queue is : 31 47
+Element successfully inserted into the Queue
+Queue is : 31 47 53
+Front element = 31
+*/
