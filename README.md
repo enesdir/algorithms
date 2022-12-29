@@ -11,7 +11,7 @@ Each data structures code is in a subfolder under [src](https://github.com/coden
 1) [`LINKED LIST`](https://github.com/codenuru/algorithms/tree/master/src/linkedList)
 2) [`STACK`](<https://github.com/codenuru/algorithms/tree/master/src/stack>)
 3) [`QUEUE`](<https://github.com/codenuru/algorithms/tree/master/src/queue>)
-4) `TREES`
+4) [`TREES`](<https://github.com/codenuru/algorithms/tree/master/src/trees>)
 5) `GRAPHS`
 
 > I have followed mycodeschool(C), freeCodeCamp.org(JavaScript), BBartes(C, C++) channels for all the concepts i have updated in this repository. link for source videos =>
