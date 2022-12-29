@@ -63,6 +63,16 @@ IsEmpty(Check queue is empty or not) Θ(1)
 
 Θ(N) where N is the size of the array for storing elements.
 
+### Linked List implementation
+
+#### Time Complexity
+
+Θ(1) The time complexity of both operations enqueue() and dequeue() is O(1) as it only changes a few pointers in both operations
+
+#### Auxilary Space
+
+Θ(1) The auxiliary Space of both operations enqueue() and dequeue() is O(1) as constant extra space is required
+
 ### linked list implementation
 
 ## Applications
