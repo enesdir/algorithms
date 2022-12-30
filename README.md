@@ -14,9 +14,19 @@ Each data structures code is in a subfolder under [src](https://github.com/coden
 4) [`TREES`](<https://github.com/codenuru/algorithms/tree/master/src/trees>)
 5) `GRAPHS`
 
+## Algorithms
+
+1) [`Sorting Algorithms`](https://github.com/codenuru/algorithms/tree/master/src/sortingAlgorithms)
+
+## References & Thanks
+
 > I have followed mycodeschool(C), freeCodeCamp.org(JavaScript), BBartes(C, C++) channels for all the concepts i have updated in this repository. link for source videos =>
 > [`MyCodeSchool`](https://www.youtube.com/user/mycodeschool)
 > [`freeCodeCamp.org`](https://www.youtube.com/c/Freecodecamp)
 > [`BBartes`](https://www.youtube.com/c/BBarters)
 
 - Visualize code : [`Python Tutor`](https://pythontutor.com/visualize.html#mode=edit)
+
+## Contributing
+
+This is an open source project, and contributions of any kind are welcome and appreciated. Open issues, bugs, and feature requests are all listed on the [issues](https://github.com/codenuru/algorithms/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests.
