@@ -42,7 +42,10 @@ const Queue = function <T>(this: IQueue<T>) {
     return nextEnqueueIndex - lastDequeuedIndex
   }
 }
+
+// Export functions
 export { Queue }
+
 // Code to test the implementation.
 // const myQueue = new Queue<number>()
 

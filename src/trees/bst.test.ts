@@ -49,6 +49,9 @@ describe("Binary Tree and Binary Search Tree", () => {
     expect(bst.levelOrder()).toStrictEqual([8, 5, 16, 4, 7, 11, 23, 6, 21])
   })
   it("should return the minimum in given binary tree", () => {
+    expect(bst.find(1)).toEqual(null)
+  })
+  it("should return the minimum in given binary tree", () => {
     expect(bst.findMin()).toEqual(4)
   })
   it("should return the maximum in given binary tree", () => {

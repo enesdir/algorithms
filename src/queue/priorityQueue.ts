@@ -45,6 +45,8 @@ function PriorityQueue<T>(this: IPriorityQueue<T>) {
     return collection.length === 0
   }
 }
+
+// Export functions
 export { PriorityQueue }
 
 // Code to test the implementation.

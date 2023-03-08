@@ -48,7 +48,10 @@ function LinkedListQueue<T>(this: ILinkedListQueue<T>) {
     return true
   }
 }
+
+// Export functions
 export { LinkedListQueue }
+
 // Code to test the implementation.
 // const myLLQueue = new LinkedListQueue<number>()
 // console.log(myLLQueue.enqueue(10))

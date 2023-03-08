@@ -9,18 +9,18 @@ Sorting is the process of arranging the elements of an array so that they can be
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Best Case</th>
-      <th>Average Case</th>
-      <th>Worst Case</th>
-      <th>Memory</th>
-      <th>Stable</th>
-      <th>Method Used</th>
+      <th scope="col">Name</th>
+      <th scope="col">Best Case</th>
+      <th scope="col">Average Case</th>
+      <th scope="col">Worst Case</th>
+      <th scope="col">Memory</th>
+      <th scope="col">Stable</th>
+      <th scope="col">Method Used</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Quick Sort</td>
+      <th scope="row">Quick Sort</th>
       <td>n log n</td>
       <td>n log n</td>
       <td>n<sup>2</sup></td>
@@ -29,7 +29,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Partitioning</td>
     </tr>
     <tr>
-      <td>Merge Sort</td>
+      <th scope="row">Merge Sort</th>
       <td>n log n</td>
       <td>n log n</td>
       <td>n log n</td>
@@ -38,7 +38,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Merging</td>
     </tr>
     <tr>
-      <td>Heap Sort</td>
+      <th scope="row">Heap Sort</th>
       <td>n log n</td>
       <td>n log n</td>
       <td>n log n</td>
@@ -47,9 +47,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Selection</td>
     </tr>
     <tr>
-      <td>
-        Insertion Sort</a>
-      </td>
+      <th scope="row">
+        Insertion Sort
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>
@@ -62,7 +62,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Insertion</td>
     </tr>
     <tr>
-      <td>Tim Sort</td>
+      <th scope="row">Tim Sort</th>
       <td>n</td>
       <td>n log n</td>
       <td>n log n</td>
@@ -71,9 +71,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Insertion &amp; Merging</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Selection Sort
-      </td>
+      </th>
       <td>
         n<sup>2</sup>
       </td>
@@ -88,7 +88,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Selection</td>
     </tr>
     <tr>
-      <td>Shell Sort</td>
+      <th scope="row">Shell Sort</th>
       <td>
         n log n
       </td>
@@ -103,9 +103,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Insertion</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Bubble Sort
-      </td>
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>
@@ -118,7 +118,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Exchanging</td>
     </tr>
     <tr>
-      <td>Tree Sort</td>
+      <th scope="row">Tree Sort</th>
       <td>
         n log n
       </td>
@@ -133,9 +133,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Insertion</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Cycle Sort
-      </td>
+      </th>
       <td>
         n<sup>2</sup>
       </td>
@@ -150,9 +150,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Selection</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Strand Sort
-      </td>
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>
@@ -165,9 +165,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Selection</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Cocktail Shaker Sort
-      </td>
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>
@@ -180,7 +180,7 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Exchanging</td>
     </tr>
     <tr>
-      <td>Comb Sort</td>
+      <th scope="row">Comb Sort</th>
       <td>
         n log n
       </td>
@@ -195,9 +195,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Exchanging</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Gnome Sort
-      </td>
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>
@@ -210,9 +210,9 @@ Sorting is the process of arranging the elements of an array so that they can be
       <td>Exchanging</td>
     </tr>
     <tr>
-      <td>
+      <th scope="row">
         Odd–even Sort
-      </td>
+      </th>
       <td>n</td>
       <td>
         n<sup>2</sup>

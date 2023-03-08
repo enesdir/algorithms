@@ -12,7 +12,7 @@ Each data structures code is in a subfolder under [src](https://github.com/coden
 2) [`STACK`](<https://github.com/codenuru/algorithms/tree/master/src/stack>)
 3) [`QUEUE`](<https://github.com/codenuru/algorithms/tree/master/src/queue>)
 4) [`TREES`](<https://github.com/codenuru/algorithms/tree/master/src/trees>)
-5) `GRAPHS`
+5) [`GRAPHS`](<https://github.com/codenuru/algorithms/tree/master/src/graphs>)
 
 ## Algorithms
 

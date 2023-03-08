@@ -17,7 +17,7 @@ interface IDoublyLinkedList<T> {
   print: () => T[]
 }
 
-export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
+function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
   let length: number = 0
   let head: DoublyLinkedListNode<T> | null = null
 
@@ -181,6 +181,10 @@ export function DoublyLinkedList<T>(this: IDoublyLinkedList<T>) {
     return temp
   }
 }
+
+// Export functions
+export { DoublyLinkedList }
+
 // var tempList = new DoublyLinkedList<number>()
 // console.log(tempList.addStart(1))
 // console.log(tempList.addStart(0))

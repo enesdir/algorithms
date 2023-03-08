@@ -17,7 +17,7 @@ interface ISinglyLinkedList<T> {
   removeAt: (x: number) => T
 }
 
-export function SinglyLinkedList<T>(this: ISinglyLinkedList<T>) {
+function SinglyLinkedList<T>(this: ISinglyLinkedList<T>) {
   let length: number = 0
   let head: INode<T> | null = null
 
@@ -146,6 +146,8 @@ export function SinglyLinkedList<T>(this: ISinglyLinkedList<T>) {
     return currentNode.data
   }
 }
+
+export { SinglyLinkedList }
 
 // var tempList = new SinglyLinkedList<string>()
 // console.log(tempList.head())

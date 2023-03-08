@@ -19,6 +19,7 @@ function SelectionSort(elements: number[]): number[] {
   return elements
 }
 
+// Export functions
 export { SelectionSort }
 
 // Code to test the implementation.
