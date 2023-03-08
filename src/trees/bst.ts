@@ -14,7 +14,7 @@ interface IBST<T> {
   preOrder: () => T[] | null
   postOrder: () => T[] | null
   levelOrder: () => T[] | null
-  find: (x: any) => any
+  find: (x: T) => INode<T> | null
   findMinHeight: () => number
   findMaxHeight: () => number
   findMin: () => T
@@ -23,17 +23,21 @@ interface IBST<T> {
   isBalanced: () => boolean
 }
 function BST<T>(this: IBST<T>) {
+  // Root of binary tree
   let root: INode<T> | null = null
-
+  // Structure of each node of the tree
   const Node = function (this: INode<T>, data: T) {
     this.data = data
     this.right = null
     this.left = null
   }
+  /**
+   * @returns root of binary tree
+   */
   this.root = function () {
     return root
   }
-  this.add = function (data) {
+  this.add = function (data: T) {
     const node = root
     if (node === null) {
       root = new Node(data)
@@ -61,15 +65,20 @@ function BST<T>(this: IBST<T>) {
       return searchTree(node)
     }
   }
+  /**
+   * Given a non-empty binary search tree, return the node with minimum key value found in that tree.
+   * Returns the min item of a tree
+   */
   this.findMin = function () {
     let current = root
+    // loop down to find the leftmost leaf
     while (current.left !== null) {
       current = current.left
     }
     return current.data
   }
   /**
-   * Returns the max height of a balanced binary tree given n items
+   * Returns the max item of a tree
    */
   this.findMax = function () {
     let current = root
@@ -106,8 +115,9 @@ function BST<T>(this: IBST<T>) {
     }
     return false
   }
-  this.remove = function (data) {
+  this.remove = function (data: T) {
     const removeNode = function (node, data) {
+      // base condition when tree is empty
       if (node == null) {
         return null
       }
@@ -132,20 +142,30 @@ function BST<T>(this: IBST<T>) {
         node.data = tempNode.data
         node.right = removeNode(node.right, tempNode.data)
         return node
+        // if the key to be deleted is smaller than the root's key, then it lies in left subtree
       } else if (data < node.data) {
         node.left = removeNode(node.left, data)
         return node
-      } else {
+        // if key to be deleted is greater than the root's key, then it lies in right subtree
+      } else if (data > node.data) {
         node.right = removeNode(node.right, data)
         return node
       }
     }
-    this.root = removeNode(this.root, data)
+    root = removeNode(root, data)
   }
+  /**
+   * function to check if tree is height-balanced or not
+   * @returns boolean
+   */
   this.isBalanced = function () {
     return this.findMinHeight() >= this.findMaxHeight() - 1
   }
+  /**
+   * Returns the min height of a tree
+   */
   this.findMinHeight = function (node = root) {
+    // base condition when tree is empty
     if (node == null) {
       return -1
     }
@@ -158,9 +178,10 @@ function BST<T>(this: IBST<T>) {
     }
   }
   /**
-   * Returns the max height of a balanced binary tree given n items
+   * Returns the max height of a tree
    */
   this.findMaxHeight = function (node = root) {
+    // base condition when tree is empty
     if (node == null) {
       return -1
     }
@@ -172,6 +193,9 @@ function BST<T>(this: IBST<T>) {
       return right + 1
     }
   }
+  /**
+   * A utility function to do inorder traversal of BST
+   */
   this.inOrder = function () {
     if (root == null) {
       return null
@@ -186,6 +210,7 @@ function BST<T>(this: IBST<T>) {
       return result
     }
   }
+  /* A utility function to print preorder traversal of BST */
   this.preOrder = function () {
     if (root == null) {
       return null
@@ -200,6 +225,7 @@ function BST<T>(this: IBST<T>) {
       return result
     }
   }
+  /* A utility function to print postorder traversal of BST */
   this.postOrder = function () {
     if (root == null) {
       return null
@@ -214,7 +240,7 @@ function BST<T>(this: IBST<T>) {
       return result
     }
   }
-
+  /* A utility function to print levelorder traversal of BST */
   this.levelOrder = function () {
     let result = []
     let Q = []
@@ -256,9 +282,13 @@ export { BST }
 // console.log(bst.isPresent(21))
 // console.log(bst.isBalanced())
 // bst.add(11)
+// console.log(bst.find(1))
 // console.log(bst.findMinHeight())
 // console.log(bst.findMaxHeight())
 // console.log(bst.isBalanced())
+// console.log(bst.root().right)
+// console.log(bst.remove(21))
+// console.log(bst.root().left.data)
 // console.log("inOrder: " + bst.inOrder())
 // console.log("preOrder: " + bst.preOrder())
 // console.log("postOrder: " + bst.postOrder())
