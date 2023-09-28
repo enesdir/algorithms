@@ -15,6 +15,8 @@
     "stdio.h": "c",
     "__locale": "c",
     "cctype": "c",
-    "locale": "c"
+    "locale": "c",
+    "stdlib.h": "c",
+    "string.h": "c"
   }
 }
