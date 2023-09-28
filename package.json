@@ -4,7 +4,7 @@
   "description": "Teaching people algorithms",
   "main": "lib/index.js",
   "scripts": {
-    "start": "yarn install && yarn test:live",
+    "start": "npm run test:live",
     "test": "jest --colors --coverage --verbose test",
     "test:live": "jest --watchAll"
   },
@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/codenuru/algorithms#readme",
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-typescript": "^7.21.0",
-    "babel-jest": "^29.5.0",
-    "@types/jest": "29.4.0",
-    "@types/node": "18.14.6",
-    "jest": "29.5.0",
-    "typescript": "5.0.0-beta"
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-typescript": "^7.23.0",
+    "babel-jest": "^29.7.0",
+    "@types/jest": "29.5.5",
+    "@types/node": "20.7.1",
+    "jest": "29.7.0",
+    "typescript": "5.2.2"
   },
   "babel": {
     "presets": [
