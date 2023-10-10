@@ -53,7 +53,7 @@ function withdrawAmount(amount: number): WithdrawalResult[] {
 export { withdrawAmount }
 
 // Example usage
-const amount = 810
-const result = withdrawAmount(amount)
-console.log(`Withdrawal: ${amount}`)
-console.log(`Banknotes: ${JSON.stringify(result)}`)
+// const amount = 810
+// const result = withdrawAmount(amount)
+// console.log(`Withdrawal: ${amount}`)
+// console.log(`Banknotes: ${JSON.stringify(result)}`)
