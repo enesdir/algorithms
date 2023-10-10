@@ -18,6 +18,7 @@ Each data structures code is in a subfolder under [src](https://github.com/enesd
 
 1) [`Sorting Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/sortingAlgorithms)
 2) [`Numerical Analysis Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/numericalAnalysisAlgorithms)
+3) [`Real World/Other Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/otherAlgorithms)
 
 ## References & Thanks
 
