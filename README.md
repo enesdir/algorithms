@@ -6,19 +6,19 @@
 
 ## Types of Data Structures
 
-Each data structures code is in a subfolder under [src](https://github.com/enesdir/algorithms/tree/master/src). Each folder consists of several files associated with the data structure. several implementations of the same data structure has been made with different sources.
+Each data structures code is in a subfolder under [src](https://github.com/enesdir/algorithms/tree/main/src). Each folder consists of several files associated with the data structure. several implementations of the same data structure has been made with different sources.
 
-1) [`LINKED LIST`](https://github.com/enesdir/algorithms/tree/master/src/linkedList)
-2) [`STACK`](<https://github.com/enesdir/algorithms/tree/master/src/stack>)
-3) [`QUEUE`](<https://github.com/enesdir/algorithms/tree/master/src/queue>)
-4) [`TREES`](<https://github.com/enesdir/algorithms/tree/master/src/trees>)
-5) [`GRAPHS`](<https://github.com/enesdir/algorithms/tree/master/src/graphs>)
+1) [`LINKED LIST`](https://github.com/enesdir/algorithms/tree/main/src/linkedList)
+2) [`STACK`](<https://github.com/enesdir/algorithms/tree/main/src/stack>)
+3) [`QUEUE`](<https://github.com/enesdir/algorithms/tree/main/src/queue>)
+4) [`TREES`](<https://github.com/enesdir/algorithms/tree/main/src/trees>)
+5) [`GRAPHS`](<https://github.com/enesdir/algorithms/tree/main/src/graphs>)
 
 ## Algorithms
 
-1) [`Sorting Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/sortingAlgorithms)
-2) [`Numerical Analysis Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/numericalAnalysisAlgorithms)
-3) [`Real World/Other Algorithms`](https://github.com/enesdir/algorithms/tree/master/src/otherAlgorithms)
+1) [`Sorting Algorithms`](https://github.com/enesdir/algorithms/tree/main/src/sortingAlgorithms)
+2) [`Numerical Analysis Algorithms`](https://github.com/enesdir/algorithms/tree/main/src/numericalAnalysisAlgorithms)
+3) [`Real World/Other Algorithms`](https://github.com/enesdir/algorithms/tree/main/src/otherAlgorithms)
 
 ## References & Thanks
 
